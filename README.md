@@ -3,6 +3,8 @@
 - 🔭 I’m currently working on Yokohama.
 - 🌱 I’m currently learning Creating YouTube.
 
+https://github-readme-stats.vercel.app/api/top-langs/?username=antladybug&layout=compact&theme=compact
+
 [![trophy](https://github-profile-trophy.vercel.app/?username=antladybug&theme=onedark)](https://github.com/ryo-ma/github-profile-trophy)
 
 <!--
