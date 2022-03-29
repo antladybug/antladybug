@@ -1,11 +1,18 @@
 @charset "UTF-8";
 
+/************/
+/* 共通     */
+/************/
 ::selection{ background-color: gold; }
-* { font-family: sans-serif; word-break: keep-all; overflow-wrap: break-word; margin: 0; padding: 0; }
+* { font-family: 'Quicksand', "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 'メイリオ' , Meiryo , Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; font-weight: bolder; word-break: keep-all; overflow-wrap: break-word; margin: 0; padding: 0; }
 body,html { height: 100%; margin: 0 auto;}
 
 #wrapper { display: grid; }
+
 @media ( max-width: 40em ) {
+	/************/
+	/* レイアウト */
+	/************/
 	#wrapper {
 		grid-template-columns: repeat( auto-fit, 10em );
 		grid-template-areas:
@@ -15,34 +22,57 @@ body,html { height: 100%; margin: 0 auto;}
 			"menu3"
 			"menu4"
 			"img"
-			"content"
 			"pan"
-			"footer";
+			"content"
+			"side"
+			"footerL"
+			"footerR"
+			"CopyR";
 		grid-template-columns: 100%;
 	}
-	#HPImage { height: 83px; }
+	#HPImage { height: 4em; }
 }
 @media ( min-width: 40em ) {
+	/************/
+	/* レイアウト */
+	/************/
 	#wrapper{
-		grid-template-columns: 1.3fr 1fr 1fr 1fr 1fr .5fr;
+		grid-template-columns: .7fr 1fr 1fr 1fr 1fr .5fr;
 		grid-template-areas:
-		"header menu1   menu2   menu3   menu4 menu5"
-		"img    img     img     img     img   img"
-		"navi1  pan     pan     pan     pan   side2"
-		"navi2  content content content side  side"
-		"footer footer  footer  footer footer footer";
+		"header   menu1   menu2   menu3   menu4 menu5"
+		"img      img     img     img     img     img"
+		"navi1    pan     pan     pan     pan     side2"
+		"navi2    content content content side    side"
+		"footerLs footerL footerL footerR footerR footerRs"
+		"CopyR    CopyR   CopyR   CopyR   CopyR   CopyR";
+		grid-template-rows: 3rem auto;
+	}
+	#header, #menu1, #menu2, #menu3, #menu4 {
+		line-height: 3rem;
+		vertical-align: middle;
+		text-align: center;
+	}
+	#footerL, #footerR, #footerLs, #footerRs, #CopyR {
+		color: white;
+		text-align: center;
+		background-color: black;
+		padding: .7rem;
 	}
 	#HPImage { height: 200px; }
 }
-#header {
-	grid-area: header;
-	background-color: lightyellow;
-}
+
+/************/
+/* ヘッダー */
+/************/
+#header { grid-area: header; }
 #menu1 { grid-area: menu1; }
 #menu2 { grid-area: menu2; }
 #menu3 { grid-area: menu3; }
 #menu4 { grid-area: menu4; }
-#side { grid-area: side; }
+
+/************/
+/* 画像 */
+/************/
 #HPImage {
 	grid-area: img;
 	width: 100%;
@@ -51,16 +81,41 @@ body,html { height: 100%; margin: 0 auto;}
 	background-size: contain;
 	background-repeat: no-repeat;
 }
+
+/************/
+/* パンくず */
+/************/
 #pan { grid-area: pan; background-color: red; }
+
+/************/
+/* 本文 */
+/************/
 #content {
 	grid-area: content;
 	background-color: lightpink;
 }
-#footer {
-	grid-area: footer;
-	background-color: dimgray;
+/************/
+/* サイド */
+/************/
+#side {
+	grid-area: side;
+	background-color: pink;
+	height: 100%;
 }
-#footer {
-	grid-area: footer;
-	background-color: dimgray;
+
+/************/
+/* フッター */
+/************/
+#footerL, #footerR, #CopyR {
+	color: white;
+	text-align: center;
+	background-color: black;
+	padding: .7rem;
 }
+#footerLs { grid-area: footerLs; }
+#footerRs { grid-area: footerRs; }
+#footerL { grid-area: footerL; }
+#footerR { grid-area: footerR; }
+#CopyR { grid-area: CopyR; }
+.FooterInfo { font-size: larger; padding: .5rem; text-align: left; border-bottom: 1px solid white; }
+.FooterSent { text-align: left; padding: .5rem; }
