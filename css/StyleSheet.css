@@ -58,7 +58,7 @@ body,html { height: 100%; margin: 0 auto;}
 		background-color: black;
 		padding: .7rem;
 	}
-	#HPImage { height: 200px; }
+	#HPImage { height: 200px; background-size: contain; }
 }
 
 /************/
@@ -78,7 +78,6 @@ body,html { height: 100%; margin: 0 auto;}
 	width: 100%;
 	background-image: url("../img/HPimg.jpg");
 	background-attachment: fixed;
-	background-size: contain;
 	background-repeat: no-repeat;
 }
 
