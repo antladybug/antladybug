@@ -30,16 +30,22 @@ body,html { height: 100%; margin: 0 auto;}
 			"CopyR";
 		grid-template-columns: 100%;
 	}
+	#wrapper div div, #pan { padding-left: .3rem; }
+	#header::before { height: 1.5rem; width: 1.5rem; margin: .3rem 0 .3rem .5rem; }
+	#header { display: inline-block; line-height: 1.3rem; vertical-align: text-bottom; }
 	#HPImage { height: 4em; }
+	#header, #menu4 { border-bottom: 1px solid black; }
+	#menu2, #menu3, #menu4 { border-top: 1px solid black; }
+	#menu1, #menu2, #menu3, #menu4 { padding-left: 1rem; }
 }
 @media ( min-width: 40em ) {
 	/************/
 	/* レイアウト */
 	/************/
 	#wrapper{
-		grid-template-columns: .7fr 1fr 1fr 1fr 1fr .5fr;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr .5fr;
 		grid-template-areas:
-		"header   menu1   menu2   menu3   menu4 menu5"
+		"header   header   menu1   menu2   menu3 menu4"
 		"img      img     img     img     img     img"
 		"navi1    pan     pan     pan     pan     tmp"
 		"navi2    content content content side    tmp"
@@ -47,6 +53,7 @@ body,html { height: 100%; margin: 0 auto;}
 		"CopyR    CopyR   CopyR   CopyR   CopyR   CopyR";
 		grid-template-rows: 3rem auto;
 	}
+	#header::before { height: 1.7rem; width: 1.7rem; }
 	#header, #menu1, #menu2, #menu3, #menu4 {
 		line-height: 3rem;
 		vertical-align: middle;
@@ -55,10 +62,21 @@ body,html { height: 100%; margin: 0 auto;}
 	#footerL, #footerR, #footerLs, #footerRs, #CopyR {
 		color: white;
 		text-align: center;
-		background-color: black;
+		background-color: darkslategray;
 		padding: .7rem;
 	}
 	#HPImage { height: 200px; background-size: contain; }
+}
+/************/
+/* ヘッダーアイコン */
+/************/
+#header::before {
+	display: inline-block;
+	content: "";
+	background-image: url("../img/hederIcon.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	vertical-align: middle;
 }
 
 /************/
@@ -69,6 +87,7 @@ body,html { height: 100%; margin: 0 auto;}
 #menu2 { grid-area: menu2; }
 #menu3 { grid-area: menu3; }
 #menu4 { grid-area: menu4; }
+#menu1:hover, #menu2:hover, #menu3:hover, #menu4:hover { background-color: darkseagreen; font-size: 1.1rem; }
 
 /************/
 /* 画像 */
@@ -82,24 +101,38 @@ body,html { height: 100%; margin: 0 auto;}
 }
 
 /************/
-/* パンくず */
+/* BreadC */
 /************/
-#pan { grid-area: pan; background-color: green; }
+#pan { grid-area: pan; }
+.panList { display: inline; }
+.panList::after { content: '>'; padding: 0 .2rem; }
+.panList:last-child::after { display: none; }
+.panList a { display: inline-block; text-decoration: none; color: darkslategray; }
 
 /************/
 /* 本文 */
 /************/
-#content {
-	grid-area: content;
-	background-color: lightpink;
+#content { grid-area: content; }
+
+.title {
+	width: 80%;
+	border: 1rem solid transparent;
+	background-image: linear-gradient(#e55d87, #5fc3e4);
+	background-origin: border-box;
+}
+.title div {
+	height: 5rem;
+	font-size: 2em;
+	text-align: center;
+	background-color: white;
 }
 /************/
 /* サイド */
 /************/
 #side {
 	grid-area: side;
-	background-color: pink;
 	height: 100%;
+	color: gainsboro;
 }
 .CharTitle { font-size: larger; }
 .CharEmp { padding-left: .3rem; }
@@ -109,7 +142,7 @@ body,html { height: 100%; margin: 0 auto;}
 #footerL, #footerR, #CopyR {
 	color: white;
 	text-align: center;
-	background-color: black;
+	background-color: darkslategray;
 	padding: .7rem;
 }
 #footerLs { grid-area: footerLs; }
