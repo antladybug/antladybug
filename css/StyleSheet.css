@@ -30,11 +30,11 @@ body,html { height: 100%; margin: 0 auto;}
 			"CopyR";
 		grid-template-columns: 100%;
 	}
-	#wrapper div div, #pan { padding-left: .3rem; }
+	#wrapper div div, #pan ul, #content { padding-left: .3rem; }
 	#header::before { height: 1.5rem; width: 1.5rem; margin: .3rem 0 .3rem .5rem; }
 	#header { display: inline-block; line-height: 1.3rem; vertical-align: text-bottom; }
 	#HPImage { height: 4em; }
-	#header, #menu4 { border-bottom: 1px solid black; }
+	#header, #menu3 { border-bottom: 1px solid black; }
 	#menu2, #menu3, #menu4 { border-top: 1px solid black; }
 	#menu1, #menu2, #menu3, #menu4 { padding-left: 1rem; }
 }
@@ -103,7 +103,7 @@ body,html { height: 100%; margin: 0 auto;}
 /************/
 /* BreadC */
 /************/
-#pan { grid-area: pan; }
+#pan { grid-area: pan; padding: .5rem 0; }
 .panList { display: inline; }
 .panList::after { content: '>'; padding: 0 .2rem; }
 .panList:last-child::after { display: none; }
@@ -116,16 +116,25 @@ body,html { height: 100%; margin: 0 auto;}
 
 .title {
 	width: 80%;
-	border: 1rem solid transparent;
-	background-image: linear-gradient(#e55d87, #5fc3e4);
+	display: inline-block;
+	background-image: linear-gradient( orange, yellow );
 	background-origin: border-box;
+	text-align: center;
 }
 .title div {
-	height: 5rem;
-	font-size: 2em;
-	text-align: center;
-	background-color: white;
+	background-image: url( "../img/CSimg.jpg" );
+	background-repeat: no-repeat;
+	opacity: .5;
 }
+.title div p {
+	font-weight: bold;
+	height: 5rem;
+	line-height: 5rem;
+	font-size: 2em;
+	vertical-align: middle;
+	color: white;
+}
+
 /************/
 /* サイド */
 /************/
@@ -133,9 +142,10 @@ body,html { height: 100%; margin: 0 auto;}
 	grid-area: side;
 	height: 100%;
 	color: gainsboro;
+	margin-bottom: .5rem;
 }
 .CharTitle { font-size: larger; }
-.CharEmp { padding-left: .3rem; }
+.CharEmp { padding-left: .3rem; width: 95%; height: 7rem; border: 1px solid black; }
 /************/
 /* フッター */
 /************/
