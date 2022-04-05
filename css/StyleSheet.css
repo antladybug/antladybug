@@ -3,7 +3,7 @@
 /************/
 /* 共通     */
 /************/
-::selection{ background-color: gold; }
+::selection{ background-color: aliceblue; color: black; }
 * { font-family: 'Quicksand', "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 'メイリオ' , Meiryo , Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; font-weight: bolder; word-break: keep-all; overflow-wrap: break-word; margin: 0; padding: 0; }
 body,html { height: 100%; margin: 0 auto;}
 
@@ -115,24 +115,26 @@ body,html { height: 100%; margin: 0 auto;}
 #content { grid-area: content; }
 
 .title {
-	width: 80%;
+	width: 95%;
 	display: inline-block;
-	background-image: linear-gradient( orange, yellow );
 	background-origin: border-box;
-	text-align: center;
-}
-.title div {
+	border-radius: 3px;
+	padding-left: 1rem;
 	background-image: url( "../img/CSimg.jpg" );
 	background-repeat: no-repeat;
-	opacity: .5;
+	opacity: .8;
 }
+
 .title div p {
-	font-weight: bold;
+	font-weight: bolder;
 	height: 5rem;
 	line-height: 5rem;
 	font-size: 2em;
 	vertical-align: middle;
 	color: white;
+	-webkit-text-stroke: .05rem darkolivegreen;
+	text-stroke: .05rem darkolivegreen;
+	opacity: 1;
 }
 
 /************/
