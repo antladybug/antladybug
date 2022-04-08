@@ -4,12 +4,13 @@
 /* 共通     */
 /************/
 ::selection{ background-color: aliceblue; color: black; }
-* { font-family: 'Quicksand', "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 'メイリオ' , Meiryo , Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; font-weight: bolder; word-break: keep-all; overflow-wrap: break-word; margin: 0; padding: 0; }
+* { font-family: 'Quicksand', "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 'メイリオ' , Meiryo , Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; font-weight: 500; word-break: keep-all; overflow-wrap: break-word; margin: 0; padding: 0; }
 body,html { height: 100%; margin: 0 auto;}
+a { text-decoration: none; }
 
 #wrapper { display: grid; }
 
-@media ( max-width: 40em ) {
+@media ( max-width: 39em ) {
 	/************/
 	/* レイアウト */
 	/************/
@@ -43,9 +44,9 @@ body,html { height: 100%; margin: 0 auto;}
 	/* レイアウト */
 	/************/
 	#wrapper{
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr .5fr;
+		grid-template-columns: .3fr 1fr 1fr 1fr 1fr .3fr;
 		grid-template-areas:
-		"header   header   menu1   menu2   menu3 menu4"
+		"header   header   menu1   menu2   menu3  padding"
 		"img      img     img     img     img     img"
 		"navi1    pan     pan     pan     pan     tmp"
 		"navi2    content content content side    tmp"
@@ -54,10 +55,11 @@ body,html { height: 100%; margin: 0 auto;}
 		grid-template-rows: 3rem auto;
 	}
 	#header::before { height: 1.7rem; width: 1.7rem; }
-	#header, #menu1, #menu2, #menu3, #menu4 {
+	#header, #menu1, #menu2, #menu3, #menu4, #padding {
 		line-height: 3rem;
 		vertical-align: middle;
 		text-align: center;
+		border-bottom: 1px black solid;
 	}
 	#footerL, #footerR, #footerLs, #footerRs, #CopyR {
 		color: white;
@@ -65,6 +67,7 @@ body,html { height: 100%; margin: 0 auto;}
 		background-color: darkslategray;
 		padding: .7rem;
 	}
+	#footerLs, #footerRs, #footerL, #footerR { margin-top: .5rem; }
 	#HPImage { height: 200px; background-size: contain; }
 }
 /************/
@@ -114,7 +117,7 @@ body,html { height: 100%; margin: 0 auto;}
 /************/
 #content { grid-area: content; }
 
-.title {
+.ConSys {
 	width: 95%;
 	display: inline-block;
 	background-origin: border-box;
@@ -122,20 +125,22 @@ body,html { height: 100%; margin: 0 auto;}
 	padding-left: 1rem;
 	background-image: url( "../img/CSimg.jpg" );
 	background-repeat: no-repeat;
-	opacity: .8;
 }
 
-.title div p {
+.ConSys p {
 	font-weight: bolder;
 	height: 5rem;
 	line-height: 5rem;
 	font-size: 2em;
 	vertical-align: middle;
 	color: white;
-	-webkit-text-stroke: .05rem darkolivegreen;
+	-webkit-text-stroke: .05rem black;
 	text-stroke: .05rem darkolivegreen;
 	opacity: 1;
 }
+.ConSys:hover { box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.2); }
+
+.title { font-size: 2rem; font-weight: bolder; padding-left: .7rem; }
 
 /************/
 /* サイド */
@@ -143,11 +148,10 @@ body,html { height: 100%; margin: 0 auto;}
 #side {
 	grid-area: side;
 	height: 100%;
-	color: gainsboro;
 	margin-bottom: .5rem;
 }
 .CharTitle { font-size: larger; }
-.CharEmp { padding-left: .3rem; width: 95%; height: 7rem; border: 1px solid black; }
+.CharEmp { padding-left: .3rem; width: 95%; height: 3rem; border: 2px solid black; }
 /************/
 /* フッター */
 /************/

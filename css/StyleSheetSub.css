@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+body{ counter-reset: stepNum 0; }
+
+@media ( max-width: 39em ) {
+	.StepNum { position: relative; left: 6rem; }
+	.StepNum::before { content: "Week"; position: absolute; left: -5rem; }
+	.StepNum::after { 
+		counter-increment: stepNum 1; 
+		content: counter( stepNum ); 
+		position: absolute; 
+		width: 1.5em; 
+		left: -2rem; 
+		height: 1.5em; 
+		border-radius: 50%; 
+		text-align: center; 
+		background: #2D5AA1; 
+		color: mintcream; }
+}
+@media ( min-width: 40em ) {
+	#content { width: 100%; box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2); }
+	#side { margin-left: .3rem; }
+	.StepNum { margin-left: 1rem; padding-bottom: .3em; font-size: 1.1em; padding-top: .5em; padding-left: 5em; position: relative; }
+	.StepNum::before { content: "Week"; position: absolute; left: .3em; margin-right: .3em; }
+	.StepNum::after { counter-increment: stepNum 1; content: counter( stepNum ); position: absolute; width: 1.5em; left: 3em; top: .3em; height: 1.5em; border-radius: 50%; text-align: center; background: #2D5AA1; color: mintcream; }
+}
+
+.WkHoliday { color: black; background: whitesmoke; margin-right: .5rem; }
+.WkHoliday::after, { background: grey; }
+
