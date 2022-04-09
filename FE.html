@@ -6,45 +6,89 @@
 		<link rel = "icon" type = "image/png" href = "./img/icon.ico" />
 		<link rel = "stylesheet" href = "./css/StyleSheet.css" />
 		<link rel = "stylesheet" href = "./css/StyleSheetSub.css" />
-		<style>#menu1 { border-bottom: .2rem solid darkorange; background-color: ghostwhite; }</style>
+		<style>#menu1 { pointer-events: none; border-bottom: .2rem solid darkorange; background: ghostwhite; }</style>
 	</head>
 	<body>
 		<div id = "wrapper">
-			<div id = "header">あんつ発信</div>
-			<div id = "menu1">基本処理技術者試験</div><div id = "menu2">IT技術</div><div id = "menu3">雑記</div><div id = "padding"></div>
+			<div id = "header"><a href = "index.html"><span id = "headerIC" class = "FontBold">あんつ発信</span></a></div>
+			<div id = "menu1" class = "FontBold">情報処理技術者試験</div>
+			<div id = "menu2"><a href = ""><div class = "FontBold">IT技術</div></a></div>
+			<div id = "menu3"><a href = ""><div class = "FontBold">雑記</div></a></div>
+			<div id = "padding"></div>
 			<div id = "pan">
 				<ul>
 					<li class = "panList">
 						<a href = "index.html">Home</a>
 					</li>
 					<li class = "panList">
-						基本処理技術者試験
+						情報処理技術者試験
 					</li>
 					<li class = "panList">
-						コンピュータシステム
+						テクノロジー分野
 					</li>
 				</ul>
 			</div>
 			<div id = "content">
 				<div class = "title">コンピュータシステム</div>
-				<div class = "StepNum WkHoliday">基礎理論</div>
-				<div class = "StepNum">アルゴリズムとプログラミング</div>
-				<div class = "StepNum">コンピュータ構成要素</div>
-				<div class = "StepNum">システム構成要素</div>
-				<div class = "StepNum">ハードウエア</div>
-				<div class = "StepNum">データベース</div>
-				<div class = "StepNum">ネットワーク</div>
-				<div class = "StepNum">復習・定期試験</div>
-				<div class = "StepNum">定期試験内容の解説・復習</div>
+				<div class = "indent1rem BorderDotted">
+					情報処理技術者試験の体系では、『テクノロジー』に分類されます。
+					優秀なエンジニアを採用する企業は、特にこの分野の習熟度を重要視する傾向があります。<br>
+					いまから始める学生にとっては、得意に感じる人と不得意に感じる人とで、授業の印象が、大きく分かれる内容です。
+					しかし、これができないからといって、IT業界に就職できないわけではありませんし、(きつい話ですが)
+					FEの資格を取得しても、習得レベルは即戦力とは、じつは程遠いものです。
+					目指すキャリアスタートの基盤を固めることを目的に、能動的に、モチベーションを保ちながら学習するのをおすすめします。
+				</div>
+				<div id  = "1week" class = "WkHoliday FontBold FontSize1_1">基礎理論</div>
+					<div class = "WeekData">
+						<div class = "FontGrey">実施なし。</div>
+					</div>
+				<div id  = "2week" class = "StepNum FontBold FontSize1_1">アルゴリズムとプログラミング</div>
+					<div class = "WeekData">
+						<div class = "date">22/04/12</div>
+						<div>
+						FEは、これまで午後の『データ構造及びアルゴリズム』は選択枠でしたが、2020年から必修項目となりました。
+						ITパスポートも、2022年から疑似言語も出題範囲に加わるなど、実践的なプログラミングスキルそのものが
+						情報処理系の資格には必須な要素として、求められるようになってきています。<br>
+						アルゴリズムは、そもそもの知識がないと解けない設問もありますが、トータルでみると
+						<span class = "yellow_line FontBold">『考える力』が、どれぐらい養われているかを図るために出題</span>されます。<br>
+						こんな問題が解けるわけがない！と尻込みする気持ちもわかります。そもそもプログラミング脳とは、
+						一朝一夕で備わるような便利なものでは、ないのです。<br>
+						アドバイスとして、まずは問題文を読んで、内容を整理してください。そして、日常生活の中で、散歩をしている時、
+						または、電車に乗っているとき、あるいはお風呂につかっている間にぼーっと考えます。
+						考えていくうちに、考えをメモしてまとめるようになったら、それは、プログラミング脳の構築がすすんでいる証です。
+						頭のストレッチという気持ちで、リラックスして取り入れましょう。
+						</div>
+						<div class = "goal">学習目標</div>
+						<div class = "check FontBold">アルゴリズムの概要を、自分なりに説明できる。</div>
+						<div class = "check FontBold">アルゴリズムの種類を知り、自分なりに説明できる。</div>
+						<div class = "check FontBold">プログラミング言語の種類と特徴を知り、自分なりに説明できる。</div>
+					</div>
+				<div id  = "3week" class = "StepNum FontBold FontSize1_1">コンピュータ構成要素</div>
+				<div id  = "4week" class = "StepNum FontBold FontSize1_1">システム構成要素</div>
+				<div id  = "5week" class = "StepNum FontBold FontSize1_1">ハードウエア</div>
+				<div id  = "6week" class = "StepNum FontBold FontSize1_1">データベース</div>
+				<div id  = "7week" class = "StepNum FontBold FontSize1_1">ネットワーク</div>
+				<div id  = "8week" class = "StepNum FontBold FontSize1_1">復習・定期試験</div>
+				<div id  = "9week" class = "StepNum FontBold FontSize1_1">定期試験内容の解説・復習</div>
 			</div>
 			<div id = "side">
 				<div class = "Side1">
-					<div class = "CharTitle">新着</div>
-					<div class = "CharEmp">基礎理論</div>
+					<div class = "index">目次</div>
+					<a href = "#1week"><div class = "indexData1">第1週</div></a>
+					<a href = "#2week"><div class = "indexData1">第2週</div></a>
+					<a href = "#3week"><div class = "indexData1">第3週</div></a>
+					<a href = "#4week"><div class = "indexData1">第4週</div></a>
+					<a href = "#5week"><div class = "indexData1">第5週</div></a>
+					<a href = "#6week"><div class = "indexData1">第6週</div></a>
+					<a href = "#7week"><div class = "indexData1">第7週</div></a>
+					<a href = "#8week"><div class = "indexData1">第8週</div></a>
+					<a href = "#9week"><div class = "indexData1">第9週</div></a>
 				</div>
 				<div class = "Side2">
-					<div class = "CharTitle">QA</div>
-					<div class = "CharEmp">よくある質問</div>
+					<div class = "CharTitle news">新着情報</div>
+					<div class = "CharEmp indent1rem">Currently under construction</div>
+					<div class = "CharTitle QA">QA</div>
+					<div class = "CharEmp indent1rem">Currently under construction</div>
 				</div>
 			</div>
 			<div id = "footerLs"></div>
