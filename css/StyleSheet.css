@@ -4,7 +4,7 @@
 /* 共通     */
 /************/
 ::selection{ background: navy; color: white; }
-* { font-size: 1.05rem; font-family: 'Quicksand', "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 'メイリオ' , Meiryo , Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; margin: 0; padding: 0; }
+* { font-size: 1rem; font-family: 'Quicksand', "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 'メイリオ' , Meiryo , Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; margin: 0; padding: 0; }
 body,html { height: 100%; margin: 0 auto; }
 a { text-decoration: none; color: black; }
 a:active, a:visited { color: black; }
@@ -115,7 +115,7 @@ a:active, a:visited { color: black; }
 /************/
 /* 本文 */
 /************/
-#content { grid-area: content; }
+#content { grid-area: content; min-height: 60vh; }
 
 .ConSys {
 	width: 95%;

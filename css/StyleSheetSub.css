@@ -33,7 +33,7 @@ body{ counter-reset: stepNum 0; }
 .StepNum a { font-size: 1.2rem; }
 
 .marginTB1rem { margin: 1rem 0; }
-.goal { margin: .3rem 0; font-weight: bold; font-size: 1.05rem; border-bottom: 1px dotted black; width: 5rem; }
+.goal { margin: .3rem 0; font-weight: bold; font-size: 1.05rem; border-bottom: 1px dotted black; width: 12%; }
 .check{ display:block; width: 93%; padding-top: .2em; padding-left: 2em; position:relative; }
 .check:before, .check:after{ content:""; display: block; position: absolute; }
 .check:before{ width: 1rem; height: 1.2rem; background: white; border: 1px solid #000000; left: 3px; top: .4rem;}
