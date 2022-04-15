@@ -31,6 +31,7 @@ a:active, a:visited { color: black; }
 			"CopyR";
 		grid-template-columns: 100%;
 	}
+	.ConSys { width: 80%; }
 	#wrapper div div, #pan ul, #content { padding-left: .3rem; }
 	#header::before { height: 1.5rem; width: 1.5rem; margin: .3rem 0 .3rem .5rem; }
 	#header { display: inline-block; line-height: 1.3rem; vertical-align: text-bottom; }
@@ -69,6 +70,7 @@ a:active, a:visited { color: black; }
 	}
 	#footerLs, #footerRs, #footerL, #footerR { margin-top: 1rem; }
 	#HPImage { height: 200px; background-size: contain; }
+	.ConSys { width: 40%; }
 }
 /************/
 /* ヘッダーアイコン */
@@ -118,7 +120,6 @@ a:active, a:visited { color: black; }
 #content { grid-area: content; min-height: 60vh; }
 
 .ConSys {
-	width: 95%;
 	display: inline-block;
 	background-origin: border-box;
 	border-radius: 3px;
