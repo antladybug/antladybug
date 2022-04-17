@@ -117,7 +117,7 @@ a:active, a:visited { color: black; }
 /************/
 /* 本文 */
 /************/
-#content { grid-area: content; min-height: 60vh; }
+#content { grid-area: content; min-height: 60vh; padding: 1rem 0; }
 
 .ConSys {
 	display: inline-block;
@@ -155,6 +155,10 @@ a:active, a:visited { color: black; }
 .news, .QA { color: red; background: -webkit-linear-gradient( 90deg, dodgerblue, limegreen ); -webkit-background-clip: text; -webkit-text-fill-color: transparent; width: 50%; margin: .1rem; font-size: 1.2rem; font-weight: bold; padding-left: .5rem; }
 .CharTitle { font-size: larger; margin-top: .5rem; }
 .CharEmp { padding-left: .8rem; width: 95%; height: 3rem; color: grey; }
+.movie { padding-left: 1rem; margin: .5rem .2rem; border-left: .5rem maroon solid; background-color: wheat; line-height: 3rem; height: 3rem; width: 90%; }
+.movie a { display: block; width: 100%; height: 100%; }
+.kakko { font-size: .8rem; }
+
 /************/
 /* フッター */
 /************/
@@ -176,6 +180,7 @@ a:active, a:visited { color: black; }
 /* 共通 */
 /************/
 .indent1rem { padding-left: 1rem; }
+.marginT0i { margin-top: 0!important; }
 .marginB05rem { margin-bottom: .5rem; }
 .marginB07rem { margin-bottom: .7rem; }
 .FontGrey { color: grey; }
