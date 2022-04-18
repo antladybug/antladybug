@@ -31,7 +31,7 @@ a:active, a:visited { color: black; }
 			"CopyR";
 		grid-template-columns: 100%;
 	}
-	.ConSys { width: 80%; }
+	.ConSys { width: 95%; }
 	#wrapper div div, #pan ul, #content { padding-left: .3rem; }
 	#header::before { height: 1.5rem; width: 1.5rem; margin: .3rem 0 .3rem .5rem; }
 	#header { display: inline-block; line-height: 1.3rem; vertical-align: text-bottom; }
