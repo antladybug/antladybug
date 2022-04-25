@@ -43,3 +43,11 @@ body{ counter-reset: stepNum 0; }
 
 .columm { margin: .25rem .5rem .25rem .5rem; padding-left: .5rem; color: white; background: -webkit-linear-gradient( 90deg, dodgerblue, limegreen ); width: 40%; height: 5rem; }
 .columm a { display: block; color: white; width: 100%; height: 100%; }
+
+.try { font-size: 1.4rem; margin: 1rem .5rem; background-color: khaki; border-left: solid .5rem maroon; padding-left: .3rem; }
+.tryTitle { font-size: 1.2rem; margin: 0 .8rem; font-weight: bold; }
+.trySentence { margin-left: 1rem; }
+.tryBox { display: flex; width: 90%; }
+.tryBoxItem { width: calc(100% / 2); text-align: center; background-color: darkolivegreen; border-radius: .3rem; margin: .3rem 1rem; padding: .5rem; }
+.tryBoxItem:hover { background-color: limegreen; }
+.tryBoxItem a { display: block; text-decoration: none; color: white; }
