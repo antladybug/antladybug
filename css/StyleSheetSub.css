@@ -11,7 +11,7 @@ body{ counter-reset: stepNum 0; }
 	.check{ margin-left: 1.5em; }
 	.check:before{ left: -1rem!important;}
 	.check:after{ left: -.8rem!important; }
-	.columm { width: 10rem!important; margin-left: 1rem; }
+	.columm { width: 90%!important; margin-left: 1rem; }
 }
 @media only screen and ( min-aspect-ratio: 4/3 ) {
 	#content { width: 100%; box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2); }
