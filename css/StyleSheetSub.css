@@ -23,6 +23,9 @@ body{ counter-reset: stepNum 0; }
 	.columm { margin-left: 2rem!important; }
 }
 
+/* 未実施週のカウントクリア */
+.WkHoliday{ counter-reset: stepNum -1!important; }
+
 /* サイドメニュー */
 .index { margin: .1rem; font-size: 1.2rem; font-weight: bold; border-bottom: solid darkorange .2rem; background: ghostwhite; padding-left: .5rem; }
 .indexData1 { margin-left: .8rem; color: black; border-bottom: 1px dotted black; margin-bottom: .3rem; }
