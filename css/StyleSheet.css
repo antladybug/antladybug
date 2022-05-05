@@ -176,6 +176,12 @@ a:active, a:visited { color: black; }
 .FooterInfo { font-size: larger; padding: .5rem; text-align: left; border-bottom: 1px solid white; }
 .FooterSent { text-align: left; padding: .5rem; font-weight: normal; }
 
+/* ページトップへ */
+@keyframes fade{ 0%{ opacity: 0; } 100%{ opacity: 1; } }
+.ToTop{ width: 3em; height: 3em; position: fixed; right: 10%; bottom: .5em; background: -webkit-linear-gradient( 90deg, dodgerblue, limegreen ); opacity: 0.95; border-radius: 50%; animation-name: fade; animation-duration: 60s; animation-iteration-count: 1; }
+.ToTop a{ position: relative; display: block; width: 3em; height: 3em; }
+.ToTop::before{ content: "↑"; font-size: 1.5em; color: white; padding-top: .2em; padding-left: .5em; position: absolute; width: 1em; }
+
 /************/
 /* 共通 */
 /************/
