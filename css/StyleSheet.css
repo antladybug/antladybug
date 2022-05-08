@@ -189,6 +189,7 @@ a:active, a:visited { color: black; }
 /************/
 .indent1rem { padding-left: 1rem; }
 .marginT0i { margin-top: 0!important; }
+.marginT05rem { margin-top: .5rem; }
 .marginB05rem { margin-bottom: .5rem; }
 .marginB07rem { margin-bottom: .7rem; }
 .FontGrey { color: grey; }
