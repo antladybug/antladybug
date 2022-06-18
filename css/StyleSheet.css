@@ -127,12 +127,21 @@ a:active, a:visited { color: black; }
 	background-image: url( "../img/CSimg.jpg" );
 	background-repeat: no-repeat;
 }
-
+.ConSie { 
+	margin-bottom: 1rem;
+	display: inline-block;
+	background-origin: border-box;
+	border-radius: 3px;
+	padding-left: 1rem;
+	background-image: url( "../img/CSiimg.jpg" );
+	background-repeat: no-repeat;
+}
 .ConSys p {
 	font-weight: bolder;
-	height: 5rem;
-	line-height: 5rem;
+	height: 7rem;
+	line-height: 7rem;
 	font-size: 2em;
+	font-weight: bold;
 	vertical-align: middle;
 	color: white;
 	-webkit-text-stroke: .05rem black;
