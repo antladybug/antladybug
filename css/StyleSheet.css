@@ -32,6 +32,7 @@ a:active, a:visited { color: black; }
 		grid-template-columns: 100%;
 	}
 	.ConSys { width: 95%; }
+	.ConSys p { font-size: 1.5em; }
 	#wrapper div div, #pan ul, #content { padding-left: .3rem; }
 	#header::before { height: 1.5rem; width: 1.5rem; margin: .3rem 0 .3rem .5rem; }
 	#header { display: inline-block; line-height: 1.3rem; vertical-align: text-bottom; }
@@ -71,6 +72,7 @@ a:active, a:visited { color: black; }
 	#footerLs, #footerRs, #footerL, #footerR { margin-top: 1rem; }
 	#HPImage { height: 200px; background-size: contain; }
 	.ConSys { width: 55%; }
+	.ConSys p { font-size: 2em; }
 }
 /************/
 /* ヘッダーアイコン */
@@ -138,9 +140,8 @@ a:active, a:visited { color: black; }
 }
 .ConSys p {
 	font-weight: bolder;
-	height: 7rem;
-	line-height: 7rem;
-	font-size: 2em;
+	height: 5rem;
+	line-height: 5rem;
 	font-weight: bold;
 	vertical-align: middle;
 	color: white;
