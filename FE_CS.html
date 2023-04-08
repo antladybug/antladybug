@@ -7,7 +7,7 @@
 		<link rel = "icon" type = "image/png" href = "./img/icon.ico" />
 		<link rel = "stylesheet" href = "./css/StyleSheet.css" />
 		<link rel = "stylesheet" href = "./css/StyleSheetSub.css" />
-		<style>#menu1 { pointer-events: none; border-bottom: .2rem solid darkorange; background: ghostwhite; }
+		<style>#menu1 { border-bottom: .2rem solid darkorange; background: ghostwhite; }
 		
 		input#acd-check1{ display: none; }
 		.acd-label{ cursor: pointer; margin-left: 1rem; }
@@ -25,7 +25,7 @@
 	<body>
 		<div id = "wrapper">
 			<div id = "header"><a href = "index.html"><span id = "headerIC" class = "FontBold">あんつ発信</span></a></div>
-			<div id = "menu1" class = "FontBold">情報処理技術者試験</div>
+			<div id = "menu1"><a href = "FE_main.html"><div class = "FontBold">情報処理技術者試験</div></a></div>
 			<div id = "menu2"><a href = "columm.html"><div class = "FontBold">IT技術</div></a></div>
 			<div id = "menu3"><a href = ""><div class = "FontBold">雑記</div></a></div>
 			<div id = "padding"></div>
@@ -35,7 +35,7 @@
 						<a href = "index.html">Home</a>
 					</li>
 					<li class = "panList">
-						情報処理技術者試験
+						<a href = "FE_main.html"><a href = "FE_main.html">情報処理技術者試験</a></a>
 					</li>
 					<li class = "panList">
 						テクノロジー分野
@@ -43,7 +43,7 @@
 				</ul>
 			</div>
 			<div id = "content">
-				<div class = "title">コンピュータシステム</div>
+				<div class = "title">テクノロジー分野</div>
 				<input id="acd-check1" class="acd-check" type="checkbox">
 				<label class="acd-label" for="acd-check1"><span class = "Navi">[表示/非表示]</span></label>
 				<div class="acd-content">
@@ -55,15 +55,15 @@
 					目指すキャリアスタートの基盤を固めることを目的に、能動的にモチベーションを保ちながら、学習するのをおすすめします。
 				</div>
 				</div>
-				<div id  = "1week" class = "WkHoliday FontBold FontSize1_1">基礎理論</div>
+				<div id  = "1week" class = "StepNum FontBold">基礎理論</div>
 					<div class = "WeekData">
-						<div class = "FontGrey">実施なし。</div>
+						<div class = "date marginB05rem">23/04/11</div>
 					</div>
 				<div id  = "2week" class = "StepNum FontBold"><a href = "FE_Tec_1.html">アルゴリズムとプログラミング</a></div>
 					<div class = "WeekData">
-						<div class = "date marginB05rem">22/04/12</div>
+						<div style = "background-color: black;" class = "date marginB05rem">--</div>
 						<div>
-							この回ではアルゴリズムの概念とフローチャート・疑似言語の基本の他、プログラミング言語のさまざまを学習します。
+							この回ではアルゴリズムの概念とフローチャート・疑似言語の基本の他、プログラミング言語のさまざまが出題されます。
 						</div>
 						<div class = "goal">到達目標</div>
 						<div class = "check FontBold">アルゴリズムの概要を、当人なりに説明できる。</div>
@@ -72,9 +72,9 @@
 					</div>
 				<div id  = "3week" class = "StepNum FontBold"><a href = "FE_Tec_2.html">コンピュータ構成要素</a></div>
 					<div class = "WeekData">
-						<div class = "date marginB05rem">22/04/19</div>
+						<div style = "background-color: black;" class = "date marginB05rem">--</div>
 						<div>
-							この回ではコンピュータを構成する装置とそれぞれの役割、そしてCPU内部の仕組みを学習します。
+							この回ではコンピュータを構成する装置とそれぞれの役割、そしてCPU内部の仕組みが出題されます。
 						</div>
 						<div class = "goal">到達目標</div>
 						<div class = "check FontBold">コンピュータの5大装置を知り、当人なりに説明できる。</div>
@@ -84,63 +84,128 @@
 					</div>
 				<div id  = "4week" class = "StepNum FontBold"><a href = "FE_Tec_3.html">システム構成要素</a></div>
 					<div class = "WeekData">
-						<div class = "date marginB05rem">22/04/26</div>
+						<div style = "background-color: black;" class = "date marginB05rem">--</div>
 						<div>
-							この回ではシステムの性能指標となるクロックとクロック周波数について、そして言語処理ツールを学習します。
+							この回ではシステムの性能指標となるクロックとクロック周波数について、そして言語処理ツールが出題されます。
 						</div>
 						<div class = "goal">到達目標</div>
 						<div class = "check FontBold"><span class = "yellow_line FontBold">プロセッサの実行時間に関する計算問題の過去問を解ける</span>。</div>
 						<div class = "check FontBold">言語処理ツールのさまざまを知り、当人なりに説明できる</div>
 						<div class = "check FontBold">『変数』を利用して、フローチャートと疑似言語の『反復構造』を、読み書きできる。</div>
 					</div>
-				<div id  = "5week" class = "StepNum FontBold"><a href = "FE_Tec_4.html">ハードウエア・ヒューマンインタフェース</a></div>
+				<div id  = "5week" class = "StepNum FontBold"><a href = "**.html">ソフトウェア</a></div>
 					<div class = "WeekData">
-						<div class = "date marginB05rem">22/05/10</div>
+						<div style = "background-color: black;" class = "date marginB05rem">--</div>
 						<div>
-							この回では、ハードウエアとヒューマンインタフェースについて学習します。
+							yyyy
 						</div>
 						<div class = "goal">到達目標</div>
-						<div class = "check FontBold">ヒューマンインタフェースのコード設計を理解し、当人なりに説明できる。</div>
+						<div class = "check FontBold">111</div>
+					</div>
+				<div id  = "6week" class = "StepNum FontBold"><a href = "FE_Tec_4.html">ハードウエア</a></div>
+					<div class = "WeekData">
+						<div style = "background-color: black;" class = "date marginB05rem">--</div>
+						<div>
+							この回では、ハードウエアについて出題されます。
+						</div>
+						<div class = "goal">到達目標</div>
 						<div class = "check FontBold"><span class = "yellow_line FontBold">マルチメディア技術の基礎的な計算問題を解ける</span>。</div>
 						<div class = "check FontBold">あまり算(剰余算)を利用した処理を知り、疑似言語で再現できる。</div>
 					</div>
-				<div id  = "6week" class = "StepNum FontBold"><a href = "FE_Tec_5.html">データベース</a></div>
+				<div id  = "7week" class = "StepNum FontBold"><a href = "FE_Tec_4.html">ヒューマンインタフェース</a></div>
 					<div class = "WeekData">
-						<div class = "date marginB05rem">22/05/17</div>
+						<div style = "background-color: black;" class = "date marginB05rem">--</div>
 						<div>
-							この回では、データベースについて学習します。
+							この回では、ヒューマンインタフェースについて出題されます。
+						</div>
+						<div class = "goal">到達目標</div>
+						<div class = "check FontBold">ヒューマンインタフェースのコード設計を理解し、当人なりに説明できる。</div>
+					</div>
+				<div id  = "8week" class = "StepNum FontBold"><a href = "FE_Tec_4.html">マルチメディア</a></div>
+					<div class = "WeekData">
+						<div style = "background-color: black;" class = "date marginB05rem">--</div>
+						<div>
+							この回では、マルチメディアについて出題されます。
+						</div>
+						<div class = "goal">到達目標</div>
+						<div class = "check FontBold">マルチメディアを理解し、当人なりに説明できる。</div>
+					</div>
+				<div id  = "9week" class = "StepNum FontBold"><a href = "FE_Tec_5.html">データベース</a></div>
+					<div class = "WeekData">
+						<div style = "background-color: black;" class = "date marginB05rem">--</div>
+						<div>
+							この回では、データベースについて出題されます。
 						</div>
 						<div class = "goal">到達目標</div>
 						<div class = "check FontBold">関係データベースの概要を知り、当人なりに説明できる。</div>
 						<div class = "check FontBold"><span class = "yellow_line FontBold">正規化の基礎を知り、当人なりに説明できる。</span></div>
 						<div class = "check FontBold">SQLの基本文をコーディングできる。</div>
 					</div>
-				<div id  = "7week" class = "StepNum FontBold"><a href = "FE_Tec_6.html">ネットワーク</a></div>
+				<div id  = "10week" class = "StepNum FontBold"><a href = "FE_Tec_6.html">ネットワーク</a></div>
 				<div class = "WeekData">
-						<div class = "date marginB05rem">22/05/24</div>
+						<div style = "background-color: black;" class = "date marginB05rem">--</div>
 						<div>
-							この回では、ネットワークについて学習します。
+							この回では、ネットワークについて出題されます。
 						</div>
 						<div class = "goal">到達目標</div>
 						<div class = "check FontBold">さまざまなネットワーク方式を知り、用語レベルの過去問を解ける。</div>
 						<div class = "check FontBold"><span class = "yellow_line FontBold">伝送時間の基本的な計算問題を解ける。</span></div>
 						<div class = "check FontBold">OSI参照モデルのベースを知り、当人なりに説明できる。</div>
 					</div>
-				<div id  = "8week" class = "StepNum FontBold">復習・定期試験</div>
-				<div id  = "9week" class = "StepNum FontBold">定期試験内容の解説・復習</div>
+				<div id  = "11week" class = "StepNum FontBold"><a href = "FE_Tec_11.html">セキュリティ</a></div>
+					<div class = "WeekData">
+						<div style = "background-color: black;" class = "date marginB05rem">--</div>
+						<div>
+							この回では情報セキュリティについて出題されます。
+						</div>
+						<div class = "goal">到達目標</div>
+						<div class = "check FontBold">情報セキュリティの<span class = "yellow_line FontBold">攻撃手法のさまざま</span>を知り、当人なりに説明できる。</div>
+						<div class = "check FontBold">情報セキュリティマネジメントシステム(ISMS)を知り、当人なりに説明できる。</div>
+						<div class = "check FontBold"><span class = "yellow_line FontBold">暗号技術</span>に関する過去問が解ける。</div>
+					</div>
+				<div id  = "12week" class = "StepNum FontBold"><a href = "FE_Tec_12.html">システム開発技術</a></div>
+					<div class = "WeekData">
+						<div style = "background-color: black;" class = "date marginB05rem">--</div>
+						<div>
+							システム開発技術について、要件定義～テスト～保守・運用までが出題されます。
+						</div>
+						<div class = "goal">到達目標</div>
+						<div class = "check FontBold">システム開発の手法のさまざまを知り、当人なりに説明できる。</div>
+						<div class = "check FontBold"><span class = "yellow_line FontBold">オブジェクト指向</span>に関する過去問が解ける。</div>
+						<div class = "check FontBold">モジュールテストの手法を知り、類する過去問が解ける。</div>
+						<div class = "check FontBold"><span class = "yellow_line FontBold">結合テストの手法</span>に類する過去問が解ける。</div>
+						<div class = "check FontBold">ソフトウェアの受入れの手順を知り、当人なりに説明できる。</div>
+						<div class = "check FontBold">ソフトウェアの運用と保守を知り、当人なりに説明できる。</div>
+					</div>
+				<div id  = "13week" class = "StepNum FontBold"><a href = "FE_Tec_13.html">ソフトウェア開発管理技術</a></div>
+					<div class = "WeekData">
+						<div style = "background-color: black;" class = "date marginB05rem">--</div>
+						<div>
+							ソフトウェア開発の管理技術が出題されます。
+						</div>
+						<div class = "goal">到達目標</div>
+						<div class = "check FontBold">XP(エクストリームプログラミング)の手法を知り、当人なりに説明できる。</div>
+						<div class = "check FontBold"><span class = "yellow_line FontBold">アジャイル開発</span>に類する過去問が解ける。</div>
+						<div class = "check FontBold"><span class = "yellow_line FontBold">ウォーターフォール開発</span>に類する過去問が解ける。</div>
+					</div>
+				<div style = "margin-bottom: 1rem;"></div>
 			</div>
 			<div id = "side">
 				<div class = "Side1">
 					<div class = "index" style = "margin-top: 0!important;">目次</div>
-					<a href = "#1week"><div class = "indexData1">第1週</div></a>
-					<a href = "#2week"><div class = "indexData1">第2週</div></a>
-					<a href = "#3week"><div class = "indexData1">第3週</div></a>
-					<a href = "#4week"><div class = "indexData1">第4週</div></a>
-					<a href = "#5week"><div class = "indexData1">第5週</div></a>
-					<a href = "#6week"><div class = "indexData1">第6週</div></a>
-					<a href = "#7week"><div class = "indexData1">第7週</div></a>
-					<a href = "#8week"><div class = "indexData1">第8週</div></a>
-					<a href = "#9week"><div class = "indexData1">第9週</div></a>
+					<a href = "#1week"><div class = "indexData1">基礎理論</div></a>
+					<a href = "#2week"><div class = "indexData1">アルゴリズムとプログラミング</div></a>
+					<a href = "#3week"><div class = "indexData1">コンピュータ構成要素</div></a>
+					<a href = "#4week"><div class = "indexData1">ソフトウェア</div></a>
+					<a href = "#5week"><div class = "indexData1">システム構成要素</div></a>
+					<a href = "#6week"><div class = "indexData1">ハードウエア</div></a>
+					<a href = "#7week"><div class = "indexData1">ヒューマンインタフェース</div></a>
+					<a href = "#8week"><div class = "indexData1">マルチメディア</div></a>
+					<a href = "#9week"><div class = "indexData1">データベース</div></a>
+					<a href = "#10week"><div class = "indexData1">ネットワーク</div></a>
+					<a href = "#11week"><div class = "indexData1">セキュリティ</div></a>
+					<a href = "#12week"><div class = "indexData1">システム開発技術</div></a>
+					<a href = "#13week"><div class = "indexData1">ソフトウェア開発管理技術</div></a>
 				</div>
 				<div class = "Side2">
 					<div class = "CharTitle news">新着情報</div>

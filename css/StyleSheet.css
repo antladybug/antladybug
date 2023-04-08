@@ -32,7 +32,7 @@ a:active, a:visited { color: black; }
 		grid-template-columns: 100%;
 	}
 	.ConSys { width: 95%; }
-	.ConSys p { font-size: 1.5em; }
+	.ConSys p { font-size: 2em; }
 	#wrapper div div, #pan ul, #content { padding-left: .3rem; }
 	#header::before { height: 1.5rem; width: 1.5rem; margin: .3rem 0 .3rem .5rem; }
 	#header { display: inline-block; line-height: 1.3rem; vertical-align: text-bottom; }
@@ -71,7 +71,7 @@ a:active, a:visited { color: black; }
 	}
 	#footerLs, #footerRs, #footerL, #footerR { margin-top: 1rem; }
 	#HPImage { height: 200px; background-size: contain; }
-	.ConSys { width: 55%; }
+	.ConSys { width: 80%; }
 	.ConSys p { font-size: 2em; }
 }
 /************/
@@ -110,7 +110,7 @@ a:active, a:visited { color: black; }
 /************/
 /* BreadC */
 /************/
-#pan { grid-area: pan; padding: .5rem 0; }
+#pan { grid-area: pan; padding: .3rem 0; }
 .panList { display: inline; }
 .panList::after { content: '>'; padding: 0 .2rem; }
 .panList:last-child::after { display: none; }
@@ -119,9 +119,10 @@ a:active, a:visited { color: black; }
 /************/
 /* 本文 */
 /************/
-#content { grid-area: content; min-height: 60vh; padding: 1rem 0; margin-bottom: 1rem; }
+#content { grid-area: content; min-height: 60vh; padding: 0; margin-bottom: 1rem; }
 
 .ConSys {
+	margin-bottom: 1rem;
 	display: inline-block;
 	background-origin: border-box;
 	border-radius: 3px;
@@ -139,7 +140,6 @@ a:active, a:visited { color: black; }
 	background-repeat: no-repeat;
 }
 .MnStrat {
-	margin-bottom: 1rem;
 	display: inline-block;
 	background-origin: border-box;
 	border-radius: 3px;
@@ -149,8 +149,8 @@ a:active, a:visited { color: black; }
 }
 .ConSys p {
 	font-weight: bolder;
-	height: 5rem;
-	line-height: 5rem;
+	height: 7rem;
+	line-height: 7rem;
 	font-weight: bold;
 	vertical-align: middle;
 	color: white;

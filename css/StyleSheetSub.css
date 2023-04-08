@@ -19,7 +19,7 @@ body{ counter-reset: stepNum 0; }
 	.WeekData{ margin-left: 6.5rem; margin-right: .5rem; }
 	#side { margin-left: .3rem; }
 	.StepNum, .WkHoliday { margin-left: 1rem; padding-bottom: .3em; font-size: 1.1em; padding-top: .5em; padding-left: 5em; position: relative; }
-	.StepNum::before, .WkHoliday::before { content: "Week"; position: absolute; left: 0em; margin-: .3em; }
+	.StepNum::before, .WkHoliday::before { content: "STEP"; position: absolute; left: 0em; margin-: .3em; }
 	.StepNum::after, .WkHoliday::after { counter-increment: stepNum 1; content: counter( stepNum ); position: absolute; width: 1.5em; left: 3em; top: .5em; height: 1.5em; border-radius: 50%; text-align: center; background: -webkit-linear-gradient( 90deg, red, yellow ); color: mintcream; }
 	.columm { margin-left: 2rem!important; }
 	.acd-check:checked + .acd-label + .acd-content { height: 17.5%;}
