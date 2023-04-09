@@ -119,7 +119,7 @@ a:active, a:visited { color: black; }
 /************/
 /* 本文 */
 /************/
-#content { grid-area: content; min-height: 60vh; padding: 0; margin-bottom: 1rem; }
+#content { grid-area: content; min-height: 60vh; padding: 0; margin-bottom: 1rem; padding-bottom: 1.5rem; }
 
 .ConSys {
 	margin-bottom: 1rem;
@@ -128,7 +128,7 @@ a:active, a:visited { color: black; }
 	border-radius: 3px;
 	padding-left: 1rem;
 	background-image: url( "../img/CSimg.jpg" );
-	background-repeat: no-repeat;
+	background-repeat: no-repeat;;
 }
 .ConSie { 
 	margin-bottom: 1rem;
@@ -147,14 +147,22 @@ a:active, a:visited { color: black; }
 	background-image: url( "../img/Photoelly037_TP_V.jpg" );
 	background-repeat: no-repeat;
 }
+.Algo {
+	display: inline-block;
+	background-origin: border-box;
+	border-radius: 3px;
+	padding-left: 1rem;
+	background-image: url( "../img/algo.jpg" );
+	background-repeat: no-repeat;
+}
 .ConSys p {
-	font-weight: bolder;
+	font-weight: bold;
 	height: 7rem;
 	line-height: 7rem;
 	font-weight: bold;
 	vertical-align: middle;
-	color: white;
-	-webkit-text-stroke: .05rem black;
+	color: wheat;
+	-webkit-text-stroke: .05rem darkslategray;
 	text-stroke: .05rem darkolivegreen;
 	opacity: 1;
 }
@@ -209,6 +217,7 @@ a:active, a:visited { color: black; }
 .indent1rem { padding-left: 1rem; }
 .marginT0i { margin-top: 0!important; }
 .marginT05rem { margin-top: .5rem; }
+.marginL10rem { margin-left: 1rem; }
 .marginB05rem { margin-bottom: .5rem; }
 .marginB07rem { margin-bottom: .7rem; }
 .FontGrey { color: grey; }
