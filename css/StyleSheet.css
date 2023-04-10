@@ -71,7 +71,7 @@ a:active, a:visited { color: black; }
 	}
 	#footerLs, #footerRs, #footerL, #footerR { margin-top: 1rem; }
 	#HPImage { height: 200px; background-size: contain; }
-	.ConSys { width: 80%; }
+	.ConSys { margin-left: 15%; width: 70%; }
 	.ConSys p { font-size: 2em; }
 }
 /************/
@@ -162,7 +162,7 @@ a:active, a:visited { color: black; }
 	font-weight: bold;
 	vertical-align: middle;
 	color: wheat;
-	-webkit-text-stroke: .05rem darkslategray;
+	-webkit-text-stroke: .1rem darkslategray;
 	text-stroke: .05rem darkolivegreen;
 	opacity: 1;
 }
@@ -210,6 +210,18 @@ a:active, a:visited { color: black; }
 .ToTop::before{ content: "↑"; font-size: 1.5em; color: white; padding-top: .2em; padding-left: .5em; position: absolute; width: 1em; }
 
 .Navi { font-weight: 200; font-size: .7rem; }
+
+
+/************/
+/* 画像 */
+/************/
+.algoQ1 {
+	background-image: url( "../img/algoQ1.png" );
+	background-repeat: no-repeat;
+	width:350px;
+	height: 266px;
+	margin: 1rem;
+}
 
 /************/
 /* 共通 */

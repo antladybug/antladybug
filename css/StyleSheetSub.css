@@ -12,7 +12,7 @@ body{ counter-reset: stepNum 0; }
 	.check:before{ left: -1rem!important;}
 	.check:after{ left: -.8rem!important; }
 	.columm { width: 90%!important; margin-left: 1rem; }
-	.acd-check:checked + .acd-label + .acd-content { height: 23%;}
+	.acd-check:checked + .acd-label + .acd-content { height: 12%;}
 }
 @media only screen and ( min-aspect-ratio: 4/3 ) {
 	#content { width: 100%; box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2); }
@@ -22,7 +22,7 @@ body{ counter-reset: stepNum 0; }
 	.StepNum::before, .WkHoliday::before { content: "STEP"; position: absolute; left: 0em; margin-: .3em; }
 	.StepNum::after, .WkHoliday::after { counter-increment: stepNum 1; content: counter( stepNum ); position: absolute; width: 1.5em; left: 3em; top: .5em; height: 1.5em; border-radius: 50%; text-align: center; background: -webkit-linear-gradient( 90deg, red, yellow ); color: mintcream; }
 	.columm { margin-left: 2rem!important; }
-	.acd-check:checked + .acd-label + .acd-content { height: 17.5%;}
+	.acd-check:checked + .acd-label + .acd-content { height: 7%;}
 }
 
 /* 未実施週のカウントクリア */
