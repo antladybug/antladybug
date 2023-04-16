@@ -40,6 +40,9 @@ a:active, a:visited { color: black; }
 	#header, #menu3 { border-bottom: 1px solid black; }
 	#menu2, #menu3 { border-top: 1px solid black; }
 	#menu1, #menu2, #menu3 { padding: .2rem; padding-left: 1rem; }
+	.Algo {
+		width: 330px;
+	}
 }
 @media only screen and ( min-aspect-ratio: 4/3 ) {
 	/************/
@@ -73,6 +76,13 @@ a:active, a:visited { color: black; }
 	#HPImage { height: 200px; background-size: contain; }
 	.ConSys { margin-left: 15%; width: 70%; }
 	.ConSys p { font-size: 2em; }
+	/************/
+	/* ワイドサイズ設定(spaceForWide) */
+	/************/
+	.SFWmarginRL10rem { margin-right: 1rem; margin-left: 1rem; }
+	.SFWmarginL08rem { margin-left: .8rem; }
+	.SFWpadding10rem { padding: 1rem; }
+	.SFWpaddingLR10rem { padding-left: 1rem; padding-right: 1rem; }
 }
 /************/
 /* ヘッダーアイコン */
@@ -151,7 +161,6 @@ a:active, a:visited { color: black; }
 	display: inline-block;
 	background-origin: border-box;
 	border-radius: 3px;
-	padding-left: 1rem;
 	background-image: url( "../img/algo.jpg" );
 	background-repeat: no-repeat;
 }
@@ -218,24 +227,27 @@ a:active, a:visited { color: black; }
 .algoQ1 {
 	background-image: url( "../img/algoQ1.png" );
 	background-repeat: no-repeat;
-	width:350px;
-	height: 266px;
+	width: 324px;
+	height: 246px;
 	margin: 1rem;
 }
+
 
 /************/
 /* 共通 */
 /************/
 .indent1rem { padding-left: 1rem; }
+.paddingT05rem { padding-top: .5rem; } 
 .marginT0i { margin-top: 0!important; }
 .marginT05rem { margin-top: .5rem; }
+.marginR05rem { margin-right: .5rem; }
 .marginL10rem { margin-left: 1rem; }
 .marginB05rem { margin-bottom: .5rem; }
 .marginB07rem { margin-bottom: .7rem; }
 .FontGrey { color: grey; }
 .FontBold { font-weight: bold; }
 .FontSize1_2 { font-size: 1.2rem; }
-.WavyRed{ text-decoration: underline wavy red; }
+.WavyRed { text-decoration: underline wavy red; }
 .yellow_line { background:linear-gradient( transparent 60%, yellow 0% ); padding: 0 .2rem; }
 .linen_line { background:linear-gradient( transparent 60%, plum 0% ); padding: 0 .2rem; }
 .blue_line { background:linear-gradient( transparent 75%, blue 0% ); padding: 0 .2rem; }

@@ -30,7 +30,7 @@ body{ counter-reset: stepNum 0; }
 
 /* サイドメニュー */
 .index { margin: .1rem; font-size: 1.2rem; font-weight: bold; border-bottom: solid darkorange .2rem; background: ghostwhite; padding-left: .5rem; }
-.indexData1 { margin-left: .8rem; color: black; border-bottom: 1px dotted black; margin-bottom: .3rem; }
+.indexData1 { padding-left: .8rem; color: black; border-bottom: 1px dotted black; margin-bottom: .3rem; }
 
 /* 本文*/
 .title { font-size: 1.5rem; font-weight: bolder; padding-left: .7rem; margin-top: .5rem; }
@@ -51,7 +51,6 @@ body{ counter-reset: stepNum 0; }
 
 .try { font-size: 1.4rem; margin: 1rem .5rem; background-color: khaki; border-left: solid .5rem maroon; padding-left: .3rem; }
 .tryTitle { font-size: 1.2rem; margin: 0 .8rem; font-weight: bold; }
-.trySentence { margin-left: 1rem; }
 .tryBox { display: flex; width: 90%; }
 .tryBoxItem { width: calc(100% / 2); text-align: center; background-color: darkolivegreen; border-radius: .3rem; margin: .3rem 1rem; padding: .5rem; }
 .tryBoxItem:hover { background-color: limegreen; }
